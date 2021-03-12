@@ -1,0 +1,7 @@
+[user]
+	name = Dan Gaur
+	email = dan@dangaur.com
+	username = dgaur
+
+[core]
+	editor = emacs
