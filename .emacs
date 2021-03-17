@@ -4,6 +4,7 @@
 (setq auto-save-default nil)			; No auto-save
 (setq truncate-lines t)
 (setq case-fold-search t)				; case-insensitive search by default
+(setq inhibit-startup-screen t)			; Disable the welcome screen
 
 (global-set-key "\M-g" 'goto-line)		; Alt-g is goto-line shortcut
 
