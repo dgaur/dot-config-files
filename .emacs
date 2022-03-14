@@ -9,6 +9,10 @@
 (global-set-key "\M-g" 'goto-line)		; Alt-g is goto-line shortcut
 
 
+;; reverse video
+(set-face-background  'default   "black")
+(set-face-foreground  'default   "white")
+
 ;;
 ;; Mode setup
 ;;
@@ -20,6 +24,28 @@
 		("\\.*" . text-mode)			; Everything else in text-mode
 	))
 
+
+;;
+;; Mac/OSX customization
+;;
+(setq mac-command-key-is-meta t)    ; Use cmd as meta on typical keyboard
+(setq mac-command-modifier 'meta)
+
+;(setq mac-option-key-is-meta nil)
+;(setq mac-option-modifier nil)
+
+
+;;
+;; org mode
+;;
+(setq org-todo-keywords
+      '((sequence "TODO" "PROG" "BLKD" "|" "DONE" "SKIP")))
+(setq org-todo-keyword-faces
+      '(("TODO" . "red")
+        ("PROG" . "yellow")
+	("BLKD" . "red")))
+        ;("CANCELED" . (:foreground "blue" :weight bold))))
+	
 
 ;;
 ;; TAB settings
